@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "name": "Api mocker",
+  "description": "Api mocker GraphQL for UI development",
+  "action": {
+    "default_popup": "js/index.html",
+    "default_title": "Api mocket extension"
+  }
+  // "content_security_policy": {
+  //   "extension_pages": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  // }
+}

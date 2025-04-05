@@ -1,38 +1,107 @@
-.App {
+.main {
+  display: flex;
+  width: 500px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  border: 2px solid black;
+}
+
+.header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.query-container {
+  border-bottom: 1px dotted grey;
+  padding-bottom: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.query-container input {
+  height: 48px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.query-container p {
+  display: block;
+}
+
+.response-container {
+  border-bottom: 1px dotted grey;
+  padding-bottom: 8px;
+}
+
+.response-container p {
+  display: block;
+}
+
+.response-container textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 350px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.actions {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 8px;
+  justify-content: end;
+}
+
+.validate-btn {
+  background-color: #0064d1;
   color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  padding: 6px 25px;
+  margin-top: 4px;
+  border-radius: 5px;
+  word-spacing: 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.enable-btn {
+  background-color: #0073d1;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  padding: 6px 25px;
+  margin-top: 4px;
+  border-radius: 5px;
+  word-spacing: 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.enable-btn:disabled {
+  background-color: #9e9e9b;
+}
+
+.disable-btn {
+  background-color: #400827;
+  color: white;
+  font-size: 18px;
+  padding: 6px 25px;
+  margin-top: 4px;
+  border-radius: 5px;
+  word-spacing: 10px;
+  cursor: pointer;
+}
+
+.enable-btn:disabled {
+  background-color: #9e9e9b;
+  cursor: none;
+}
+
+.message {
+  color: green;
+  font-weight: 500;
+  font-size: 14px;
 }
